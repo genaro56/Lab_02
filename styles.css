@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,700');
+
+.header {
+    text-align: center;   
+}
+
+body {
+    padding: 50px;
+    height: 100vh;
+    background-color: rgb(65, 178, 212);
+	font-family: 'Montserrat', sans-serif;
+	color: #262626;
+	font-size: 16px;
+}
+
+#photo {
+    display: flex;
+    align-self: right;
+    width: 200px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./53-0-2.jpg);
+    border: aliceblue 10px double;
+    border-radius: 20px;
+}
+.title {
+    font-weight: bold;
+}
+
+h1 {
+animation: neonGlow 2s infinite alternate;
+}
+.rounded-header {
+    border-radius: 20px;
+    height: 300px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p {
+    margin-left: 10px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.orderedInfo {
+    margin-left: 10px;
+}
+
+li {
+    margin-left: 5px;
+}
+@keyframes shine {
+  0%  {background-position:0% 50%;}
+  100% {background-position:100% 50%;}
+}
+
+p:hover,ol:hover {
+  transition: all 0.5s ease-in-out;
+  background: linear-gradient(311deg, transparent 30%, #CFD5DA, transparent 70%) 0% 0% / 300% 300%;
+  animation: shine 1.0s ease 0s infinite alternate none running;
+}
+ol {
+    border-radius: 20px;
+}
+ol > li {
+    font-weight: bold;
+    color: blueviolet;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        padding: 20px;
+        background-color: rgb(65, 178, 212);
+        font-family: 'Montserrat', sans-serif;
+        color: #262626;
+        font-size: 12px;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .rounded-header {
+        width: 100%;
+        display: block;
+    }
+
+    #photo {
+        margin: auto;
+    }
+}
+
+#exp {
+    border-radius: 20px;
+    background-color: aliceblue;   
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #photo {
+        margin: 20px 20px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 5px 20px;
+        box-sizing: border-box;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: teal;
+    }
+}
